@@ -10,7 +10,7 @@ Ayudhaya
 │    ├── test (Postman)
 │    │    ├── success
 │    │    └── alternative
-│    └── db.spl (database starter file)
+│    └── db.sql (database starter file)
 ├── .workflow (For running test)
 └── README.md
 
