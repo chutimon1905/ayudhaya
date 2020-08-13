@@ -17,46 +17,67 @@ Ayudhaya
 ```
 
 # Ayudhaya
+
 # โจทย์เว็บไซต์ bla bla
 
 # Convention Web UI
+
 ## Common Convention
+
 - โค้ดการทำงานหนึ่งบรรทัด ไม่มีการใส่ Semi-colon `;`
+
 ```
 console.log(this.test)
 ```
 
 ## Function And Parameter Naming Conventions
+
 - ส่วนที่เกี่ยวข้องกับ UI จะใช้รูปแบบการตั้งชื่อแบบ **PascalCase ขึ้นต้นต้วยตัวพิมพ์ใหญ่**
 - ส่วนที่เป็นการคำนวน จะใช้รูปแบบการตั้งชื่อแบบ **camelCase ขึ้นต้นต้วยตัวพิมพ์เล็ก**
+
 ```
 func Homepage() //UI
 func calculateTotalPrice() //logic
 ```
 
-## HTML Element ID 
+## HTML Element ID
+
 - จะใช้รูปแบบการตั้งชื่อแบบ **kebab-case**
+
 ```
 receive-name
 total-amount
 ```
 
 ## Directory Name
-- ใช้ตัวอักษรพิมพ์เล็กทั้งหมด เช่น
+
+- ชื่อไดเร็คทอรี่เป็นคำเดียวให้ตั้งชื่อเป็นตัวอักษรพิมพ์เล็กทั้งหมด เช่น
+
 ```
 order
 product
 ```
 
+- ชื่อไดเร็คทอรี่มีความยาวตั้งแต่ 2 คำขึ้นไป ให้ตั้งชื่อในรูปแบบ **kebab-case** เช่น
+
+```
+ิbank-account
+insurance-detail
+```
+
 ## File Name
+
 - ใช้รูปแบบการตั้งชื่อฟังก์ชั่นแบบ **PascalCase**
+
 ```
 Order.js
 Shipping.test.js
 ```
 
 ## Test Name
-- ใช้รูปแบบการตั้งชื่อให้สื่อความหมาย  เช่น
+
+- ใช้รูปแบบการตั้งชื่อให้สื่อความหมาย เช่น
+
 ```
 describe('CalculateTotalPrice', () => {
 it('Input 5+8 should be 13',()=>{
@@ -71,22 +92,27 @@ it('Input 5+8 should be 13',()=>{
 ```
 
 ## Variable Name
+
 - ชื่อตัวแปรเป็นคำเดียวให้ตั้งชื่อเป็นพิมพ์เล็กทั้งหมด เช่น
+
 ```
 day, month, year
 ```
 
 - ชื่อตัวแปรมีความยาวตั้งแต่ 2 คำขึ้นไป ให้คำหลังขึ้นตันด้วยตัวอักษรตัวใหญ่เสมอ ในรูปแบบ **camelCase** เช่น
+
 ```
 startDay, endMonth
 ```
 
 - ชื่อตัวแปรเก็บค่าให้เติม "List" ต่อท้ายตัวแปรเสมอ เช่น
+
 ```
 orderList
 ```
 
 - ชื่อตัวแปร Constant ให้ตังชื่อเป็นตัวอักษรพิมพ์ใหญ่ทั้งหมด เช่น
+
 ```
 HOUR, MINUTE
 ```
@@ -94,21 +120,28 @@ HOUR, MINUTE
 ---
 
 # Convention Web Service
+
 ## Function And Parameter Naming Conventions
+
 - ใช้รูปแบบการตั้งชื่อฟังก์ชั่นแบบ **camelCase**
+
 ```
 func calculateTotalPrice()
 ```
 
 ## Directory Name
+
 - ใช้ตัวอักษรพิมพ์เล็กทั้งหมด เช่น
+
 ```
 order
 product
 ```
 
 ## File Name
+
 - PascalCase เช่น
+
 ```
 OrderService.go
 ProductRepository.go
@@ -116,43 +149,52 @@ OrderService_test.go
 ```
 
 ## Package Name
+
 - ใช้ตัวอักษรพิมพ์เล็กทั้งหมด เช่น
+
 ```
 order
 product
 ```
 
 ## Test Function Name
+
 - ใช้รูปแบบการตั้งชื่อฟังก์ชันเป็นแบบ **snake_case** เช่น
+
 ```
 test_calculate_age_input_birth_date_18042003_should_be_16
 ```
 
 ## Variable Name
+
 - ชื่อตัวแปรเป็นคำเดียวให้ตั้งชื่อเป็นพิมพ์เล็กทั้งหมด เช่น
+
 ```
 day, month, year
 ```
 
 - ชื่อตัวแปรมีความยาวตั้งแต่ 2 คำขึ้นไป ให้คำหลังขึ้นตันด้วยตัวอักษรตัวใหญ่เสมอ ในรูปแบบ **camelCase** เช่น
+
 ```
 startDay, endMonth
 ```
 
 - ชื่อตัวแปรเก็บค่าให้เติม "List" ต่อท้ายตัวแปรเสมอ เช่น
+
 ```
 orderList
 ```
 
 - ชื่อตัวแปร Constant ให้ตังชื่อเป็นตัวอักษรพิมพ์ใหญ่ทั้งหมด เช่น
+
 ```
 HOUR, MINUTE
 ```
 
 ---
 
-
 ## ข้อตกลง Commit Message ร่วมกัน
+
 ```
 [Created]: สร้างไฟล์ใหม่สำหรับ...
 
@@ -209,4 +251,3 @@ robot atdd/ui/shopping_cart_success.robot
 ```
 make run_robot
 ``` -->
-
