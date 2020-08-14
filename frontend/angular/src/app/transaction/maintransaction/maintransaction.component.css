@@ -1,10 +1,22 @@
-p {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
-}
-
 .x {
   margin: 24%;
+}
+.y {
+  display: flex;
+  margin-left: 85%;
+}
+.z {
+  margin-top: 50px;
+}
+
+.Kevin {
+  display: flex;
+}
+
+.pic2 {
+  margin-left: 81%;
+}
+
+.button {
+  margin-left: 0%;
 }
