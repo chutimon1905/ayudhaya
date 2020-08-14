@@ -1,1 +1,30 @@
-<p>package works!</p>
+<nb-card>
+  <nb-card-header class="header">
+    Package details
+  </nb-card-header>
+  <!-- <nb-card-body>
+        Everyday <span class="x">172342314723</span>
+
+        <nb-user name="John Doe" title="Engineer"></nb-user>
+      </nb-card-body> -->
+  <div class="parent">
+    <div *ngFor="let p of packages" class="button-structure">
+      <div class="package-pic">
+
+        <nb-user size="giant" name="{{p.packageName}}" title="Engineer" color="#f1f1f1" onlyPicture></nb-user>
+      </div>
+      <div class="detail">
+        <span>{{p.packageName}}</span> <br>
+        <span>{{p.packagePrice}}</span> <br>
+      </div>
+    </div>
+    <!-- <div class="detail">
+          <span>150,000</span> <br>
+          <span>Medical Expenses Incurred in Thailand</span>
+        </div>
+        <div class="detail">
+          <span>15,000</span> <br>
+          <span>Trip Curtailment</span>
+        </div> -->
+  </div>
+</nb-card>

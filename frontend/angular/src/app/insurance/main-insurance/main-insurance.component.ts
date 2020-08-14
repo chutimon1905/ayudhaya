@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CentralStoreService } from 'src/app/service/central-store/central-store.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-insurance',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainInsuranceComponent implements OnInit {
 
-  constructor() { }
+  toSummary: boolean = false;
+
+  constructor(private centralStore: CentralStoreService, private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  onConfirm() {
+    this.toSummary = true;
+  }
+
+  confirmInsurance() {
+    this.router.navigateByUrl('/traveller');
+  }
+
+  backInsurance() {
+    this.toSummary = false;
   }
 
 }

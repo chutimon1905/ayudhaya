@@ -9,7 +9,7 @@ import { TermAndConditionComponent } from '../term-and-condition/term-and-condit
 })
 export class MainTravellerComponent implements OnInit {
 
-  formFilled = false;
+  formFilled = true;
 
   constructor(private dialogService: NbDialogService) { }
 
