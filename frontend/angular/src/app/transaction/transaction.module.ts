@@ -3,7 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { TransactionRoutingModule } from './transaction-routing.module';
 import { MaintransactionComponent } from './maintransaction/maintransaction.component';
-import { NbCardModule, NbLayoutModule, NbUserModule } from '@nebular/theme';
+import {
+  NbCardModule,
+  NbLayoutModule,
+  NbUserModule,
+  NbButtonModule,
+} from '@nebular/theme';
 
 @NgModule({
   declarations: [MaintransactionComponent],
@@ -13,6 +18,7 @@ import { NbCardModule, NbLayoutModule, NbUserModule } from '@nebular/theme';
     NbCardModule,
     NbLayoutModule,
     NbUserModule,
+    NbButtonModule,
   ],
 })
 export class TransactionModule {}
