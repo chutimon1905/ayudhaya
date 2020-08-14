@@ -1,0 +1,25 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 10px;
+}
+
+.buttonStructure {
+  display: grid;
+  /* grid-template-columns: ; */
+}
+
+.detail{
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  background: #2750ba;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  color: #f1f1f1;
+  align-items: center;
+  justify-content: center;
+}
