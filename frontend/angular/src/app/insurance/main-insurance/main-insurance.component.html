@@ -2,11 +2,15 @@
   <app-country></app-country>
   <app-package></app-package>
   <app-pick-date></app-pick-date>
-  <div style="justify-content: end;">
+  <div class="btn-next-wrapper">
     <button nbButton (click)="onConfirm()" status="primary"> Confirm </button>
   </div>
 </div>
 
 <div *ngIf="toSummary">
   <app-insurance-summary></app-insurance-summary>
+  <div class="btn-next-wrapper">
+    <button nbButton class="btn-back" (click)="backInsurance()">Back</button>
+    <button nbButton id="btn-next-wrapper" status="primary" (click)="confirmInsurance()">Confirm</button>
+  </div>
 </div>

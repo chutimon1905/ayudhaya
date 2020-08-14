@@ -1,3 +1,7 @@
+.header {
+  font-size: 24px;
+}
+
 .parent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -25,5 +29,11 @@
   font-size: 20px;
   color: #f1f1f1;
   /* align-items: center; */
+  justify-content: center;
+}
+
+.package-pic {
+  display: flex;
+  padding-left: 20px;
   justify-content: center;
 }
