@@ -1,6 +1,6 @@
 <nb-card>
     <nb-card-header class="header">
-        Pick Date
+        Select date
     </nb-card-header>
     <nb-card-body>
 
@@ -19,13 +19,13 @@
 
         <div class="date-wrapper">
             <div class="date-input-wrapper">
-                <label class="date-label">Start Date:</label>
+                <label class="date-label">Depart date:</label>
                 <input nbInput id="start-date" name="start-date" type="date" [(ngModel)]="selectedStartDate">
             </div>
 
 
             <div class="date-input-wrapper">
-                <label class="date-label">End Date:</label>
+                <label class="date-label">Return date:</label>
                 <input nbInput id="end-date" name="end-date" type="date" [(ngModel)]="selectedEndDate"
                     [min]="selectedStartDate" [max]="maxDate">
             </div>
