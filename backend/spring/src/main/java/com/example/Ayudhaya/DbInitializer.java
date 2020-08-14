@@ -4,6 +4,8 @@ import com.example.Ayudhaya.Country.Country;
 import com.example.Ayudhaya.Country.CountryRepository;
 import com.example.Ayudhaya.Package.Package;
 import com.example.Ayudhaya.Package.PackageRepository;
+import com.example.Ayudhaya.User.User;
+import com.example.Ayudhaya.User.UsersRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -14,18 +16,20 @@ import java.util.List;
 public class DbInitializer implements CommandLineRunner {
     private CountryRepository countryRepository;
     private PackageRepository packageRepository;
+    private UsersRepository usersRepository;
 
-    public DbInitializer(CountryRepository countryRepository, PackageRepository packageRepository) {
+    public DbInitializer(CountryRepository countryRepository, PackageRepository packageRepository, UsersRepository usersRepository) {
         this.countryRepository = countryRepository;
         this.packageRepository = packageRepository;
+        this.usersRepository = usersRepository;
     }
     @Override
     public void run(String... args) throws Exception{
         Country c1 = new Country("01","Germany");
-        Country c2 = new Country("02","Thailand");
+        Country c2 = new Country("02","France");
         this.countryRepository.deleteAll();
-        List<Country> counties = Arrays.asList(c1,c2);
-        this.countryRepository.saveAll(counties);
+        List<Country> countries = Arrays.asList(c1,c2);
+        this.countryRepository.saveAll(countries);
 
 
         Package p1 = new Package("01","Personal Accident Loss of Life, Dismemberment Loss of Sight or Total Permanent Disability from Accident", "1,5000,000", new String[]{"01","02"},"Allianz");
@@ -45,7 +49,14 @@ public class DbInitializer implements CommandLineRunner {
         this.packageRepository.deleteAll();
         List<Package> packages = Arrays.asList(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12);
         this.packageRepository.saveAll(packages);
+
+        User user1 = new User("01","Mr.","Numlabyod","Reprakan","1799310717171","28 July 1998","Allianz Bank",250000,"4750317960","nearreann@gmail.com","0980159795");
+        this.usersRepository.deleteAll();
+        List<User> user = Arrays.asList(user1);
+        this.usersRepository.saveAll(user);
     }
+
+
 
 
 
