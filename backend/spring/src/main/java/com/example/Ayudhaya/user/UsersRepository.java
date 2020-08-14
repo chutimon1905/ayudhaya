@@ -1,7 +1,10 @@
 package com.example.Ayudhaya.user;
 
-import com.example.Ayudhaya.Country;
+
 import org.springframework.data.mongodb.repository.MongoRepository;
 
+import java.util.List;
+
 public interface UsersRepository  extends MongoRepository<User,String> {
+    List<User> findByUserId(String userId);
 }
