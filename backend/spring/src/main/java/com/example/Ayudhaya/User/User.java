@@ -1,4 +1,4 @@
-package com.example.Ayudhaya.user;
+package com.example.Ayudhaya.User;
 
 import lombok.Data;
 import nonapi.io.github.classgraph.json.Id;
@@ -13,33 +13,33 @@ public class User {
     private String citizenId;
     private String passportId = "-";
     private String dateOfBirth;
-    private String bankName;
-    private double bankBalance;
-    private String emailAddress;
-    private String mobileNum;
-    private String beneficial = "-";
+    private String fromBankName;
+    private double fromBankBalance;
+    private String fromBankNo;
+    private String email;
+    private String mobileNo;
+    private String beneficialName = "-";
 
-    public User(String userId, String title, String firstName, String lastName, String citizenId, String dateOfBirth, String bankName, double bankBalance, String emailAddress, String mobileNum) {
+    public User(String userId, String title, String firstName, String lastName, String citizenId, String dateOfBirth, String fromBankName, double fromBankBalance, String fromBankNo, String email, String mobileNo) {
         this.userId = userId;
         this.title = title;
         this.firstName = firstName;
         this.lastName = lastName;
         this.citizenId = citizenId;
-        this.passportId = passportId;
         this.dateOfBirth = dateOfBirth;
-        this.bankName = bankName;
-        this.bankBalance = bankBalance;
-        this.emailAddress = emailAddress;
-        this.mobileNum = mobileNum;
-        this.beneficial = beneficial;
+        this.fromBankName = fromBankName;
+        this.fromBankBalance = fromBankBalance;
+        this.fromBankNo = fromBankNo;
+        this.email = email;
+        this.mobileNo = mobileNo;
     }
 
     public void setPassportId(String passportId) {
         this.passportId = passportId;
     }
 
-    public void setBeneficial(String beneficial) {
-        this.beneficial = beneficial;
+    public void setBeneficialName(String beneficialName) {
+        this.beneficialName = beneficialName;
     }
 
     public String getUserId() {
@@ -70,19 +70,19 @@ public class User {
         return dateOfBirth;
     }
 
-    public String getBankName() {
-        return bankName;
+    public String getFromBankName() {
+        return fromBankName;
     }
 
-    public double getBankBalance() {
-        return bankBalance;
+    public double getFromBankBalance() {
+        return fromBankBalance;
     }
 
-    public String getEmailAddress() {
-        return emailAddress;
+    public String getEmail() {
+        return email;
     }
 
-    public String getMobileNum() {
-        return mobileNum;
+    public String getMobileNo() {
+        return mobileNo;
     }
 }
