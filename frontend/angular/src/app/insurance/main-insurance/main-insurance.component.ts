@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainInsuranceComponent implements OnInit {
 
+  toSummary: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onConfirm() {
+    this.toSummary = true;
   }
 
 }

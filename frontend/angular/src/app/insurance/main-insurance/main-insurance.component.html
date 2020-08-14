@@ -1,4 +1,12 @@
-<p>main-insurance works!</p>
+<div *ngIf="!toSummary">
+  <app-country></app-country>
+  <app-package></app-package>
+  <app-pick-date></app-pick-date>
+  <div style="justify-content: end;">
+    <button nbButton (click)="onConfirm()" status="primary"> Confirm </button>
+  </div>
+</div>
 
-<app-country></app-country>
-<app-package></app-package>
+<div *ngIf="toSummary">
+  <app-insurance-summary></app-insurance-summary>
+</div>

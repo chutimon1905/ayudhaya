@@ -16,7 +16,7 @@ export class CountryService {
     //   { countryId: "02", countryName: "Thailand" },
     // ])
     return this.http.get<Country[]>(
-      'http://localhost:8080/country'
+      'http://localhost:8080/api/v1/country'
     );
   }
 

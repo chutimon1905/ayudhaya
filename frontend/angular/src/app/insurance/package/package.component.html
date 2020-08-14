@@ -10,21 +10,22 @@
         <nb-user name="John Doe" title="Engineer"></nb-user>
       </nb-card-body> -->
       <div class="parent">
-        <div>
-          <nb-user name="John Doe" title="Engineer" onlyPicture></nb-user>
+        <div *ngFor="let p of packages" class="button-structure">
+          <nb-user size="giant" name="John Doe" title="Engineer" color="#f1f1f1" onlyPicture></nb-user>
           <div class="detail">
-            <span>1,500,000</span> <br>
-            <span>Medical Expenses Incurred Overseas</span>
+            <span>{{p.packagePrice}}</span> <br>
+            <span>{{p.packageName}}</span> <br>
+            <span>Company</span>
           </div>
         </div>
-        <div class="detail">
+        <!-- <div class="detail">
           <span>150,000</span> <br>
           <span>Medical Expenses Incurred in Thailand</span>
         </div>
         <div class="detail">
           <span>15,000</span> <br>
           <span>Trip Curtailment</span>
-        </div>
+        </div> -->
       </div>
     </nb-card>
   </nb-layout-column>
