@@ -1,21 +1,25 @@
 package com.example.Ayudhaya.user;
 
+import lombok.Data;
+import nonapi.io.github.classgraph.json.Id;
+
+@Data
 public class User {
+    @Id
     private String userId;
     private String title;
     private String firstName;
     private String lastName;
     private String citizenId;
-    private String passportId;
+    private String passportId = "-";
     private String dateOfBirth;
     private String bankName;
     private double bankBalance;
     private String emailAddress;
     private String mobileNum;
-    private String beneficial;
+    private String beneficial = "-";
 
-    public User() {
-        this.beneficial = beneficial;
+    public User(String userId, String title, String firstName, String lastName, String citizenId, String dateOfBirth, String bankName, double bankBalance, String emailAddress, String mobileNum) {
         this.userId = userId;
         this.title = title;
         this.firstName = firstName;
@@ -27,6 +31,15 @@ public class User {
         this.bankBalance = bankBalance;
         this.emailAddress = emailAddress;
         this.mobileNum = mobileNum;
+        this.beneficial = beneficial;
+    }
+
+    public void setPassportId(String passportId) {
+        this.passportId = passportId;
+    }
+
+    public void setBeneficial(String beneficial) {
+        this.beneficial = beneficial;
     }
 
     public String getUserId() {
