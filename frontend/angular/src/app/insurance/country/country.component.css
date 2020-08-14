@@ -1,0 +1,14 @@
+.flex-container{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  max-width: 100%;
+  flex: 1;
+}

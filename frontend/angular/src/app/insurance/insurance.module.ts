@@ -7,6 +7,7 @@ import { CountryComponent } from './country/country.component';
 import { PackageComponent } from './package/package.component';
 import { PickDateComponent } from './pick-date/pick-date.component';
 import { InsuranceSummaryComponent } from './insurance-summary/insurance-summary.component';
+import { NbCardModule, NbLayoutModule, NbUserModule, NbSidebarModule } from '@nebular/theme';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,13 @@ import { InsuranceSummaryComponent } from './insurance-summary/insurance-summary
     PickDateComponent,
     InsuranceSummaryComponent,
   ],
-  imports: [CommonModule, InsuranceRoutingModule],
+  imports: [
+    CommonModule,
+    InsuranceRoutingModule,
+    NbCardModule,
+    NbLayoutModule,
+    NbUserModule,
+    NbSidebarModule
+  ],
 })
-export class InsuranceModule {}
+export class InsuranceModule { }
