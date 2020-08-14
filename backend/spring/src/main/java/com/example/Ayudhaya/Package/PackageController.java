@@ -20,7 +20,7 @@ public class PackageController {
     }
 
     @GetMapping("/api/v1/package/{countryId}")
-    public List<Package> GetAllPackageByCountry(@PathVariable String countryId){
+    public List<Package> GetPackageByCountry(@PathVariable String countryId){
         List<Package> packages = packageRepository.findByCountryListIn(countryId);
         return packages;
     }

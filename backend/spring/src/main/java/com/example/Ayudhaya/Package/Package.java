@@ -19,5 +19,6 @@ public class Package {
         this.countryList = countryList;
         this.companyName = companyName;
     }
+
 }
 
