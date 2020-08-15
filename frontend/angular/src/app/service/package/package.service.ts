@@ -16,7 +16,7 @@ export class PackageService {
     //   { packageId: "02", packageName: "In country", packagePrice: "120", countryList: ["01", "02"], companyName: "Allianz" },
     // ])
     return this.http.get<Package[]>(
-      `http://localhost:8080/package/${cid}`
+      `http://localhost:8080/api/v1/package/${cid}`
     );
   }
 }

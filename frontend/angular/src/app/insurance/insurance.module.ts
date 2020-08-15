@@ -6,6 +6,7 @@ import {
   NbButtonModule,
   NbDatepickerModule,
   NbInputModule,
+  NbUserModule, NbSidebarModule
 } from '@nebular/theme';
 
 import { InsuranceRoutingModule } from './insurance-routing.module';
@@ -29,6 +30,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     InsuranceRoutingModule,
     NbCardModule,
     NbLayoutModule,
+    NbUserModule,
+    NbSidebarModule,
     NbButtonModule,
     NbDatepickerModule,
     NbInputModule,

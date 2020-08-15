@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PackageService } from 'src/app/service/package/package.service';
+import { Package } from 'src/app/domain/package/package';
 
 @Component({
   selector: 'app-package',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PackageComponent implements OnInit {
 
-  constructor() { }
+  packages: Package[];
+
+  constructor(private packageService: PackageService) { }
 
   ngOnInit(): void {
+    this.packageService.getPackageByCountryId("01").subscribe(ps =>
+      this.packages = ps)
   }
 
 }
